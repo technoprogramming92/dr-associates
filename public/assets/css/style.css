@@ -2413,7 +2413,7 @@ label {
 	bottom: 0;
 	height: 40px;
 	width: 380px;
-	background: var(--tg-primary-color);
+	background: #72527f;
 	z-index: -1;
 }
 .about-img-wrap-five img:nth-child(1) {
@@ -2427,7 +2427,7 @@ label {
 	top: 14%;
 }
 .about-img-wrap-five .experience-wrap {
-	background: var(--tg-primary-color);
+	background: #72527f;
 	max-width: 200px;
 	padding: 36px 20px;
 	position: absolute;
@@ -9943,7 +9943,7 @@ label {
     top: 0;
     width: 35%;
     height: 100%;
-    background: var(--tg-primary-color);
+    background: #72527f;
     border-radius: 15px 15px 0 15px;
     z-index: -1;
 }
