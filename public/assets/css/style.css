@@ -4754,7 +4754,7 @@ label {
 	font-family: var(--tg-heading-font-family);
 }
 .cta-info-wrap .content a:hover {
-	color: var(--tg-primary-color);
+	color: #d7c0d8;
 }
 .cta-content .title {
 	font-weight: 800;
@@ -4770,7 +4770,7 @@ label {
 	background: var(--tg-white);
 }
 .cta-inner-wrap-two .cta-info-wrap a:hover {
-	color: var(--tg-secondary-color);
+	color: #D7C0D8;
 }
 .cta-inner-wrap-two .cta-btn .btn {
 	border: 2px solid var(--tg-white);
@@ -4778,8 +4778,8 @@ label {
 	padding: 16px 30px;
 }
 .cta-inner-wrap-two .cta-btn .btn:hover {
-	background: var(--tg-blue);
-	border-color: var(--tg-blue);
+	background: #D7C0D8;
+	border-color: #72527f;
 }
 
 /* cta-three */
