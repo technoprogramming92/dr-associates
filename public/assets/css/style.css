@@ -3626,7 +3626,7 @@ label {
 
 /* choose-three */
 .choose-area-three {
-    background: var(--tg-secondary-color);
+    background: #72527f;
     position: relative;
     padding: 120px 0;
     overflow: hidden;
@@ -3665,7 +3665,7 @@ label {
     font-weight: 600;
     font-size: 20px;
     color: var(--tg-white);
-    background: #052462;
+    background: #685d9F;
     position: relative;
 }
 .accordion-wrap-two .accordion-button:focus {
@@ -3673,7 +3673,7 @@ label {
 }
 .accordion-wrap-two .accordion-button:not(.collapsed) {
     color: var(--tg-white);
-    background-color: #1A66FF;
+    background-color: #685d9F;
     box-shadow: none;
 }
 .accordion-wrap-two .accordion-button::after {
@@ -3695,6 +3695,7 @@ label {
 }
 .accordion-wrap-two .accordion-body {
     padding: 20px 40px 30px 22px;
+	background-color: #685d9F;
 }
 .accordion-wrap-two .accordion-body p {
     margin-bottom: 0;
@@ -6459,7 +6460,7 @@ label {
 	padding: 120px 0;
 }
 .section-title-two.white-title .sub-title {
-	background: #d7c0d8;
+	background: #685d9F;
 	color: var(--tg-white);
 }
 .testimonial-item-wrap-two {
