@@ -1,0 +1,32 @@
+/* equal-height columns – keep this from earlier */
+@media (min-width: 768px) {
+  .services-area-four .row.justify-content-center > [class*="col-"] {
+    display: flex;
+  }
+  /* the whole card is now a column-flex box */
+  .services-item-four {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: 100%;
+  }
+
+  /* content section should also stretch */
+  .services-content-four {
+    flex: 1 1 auto;              /* grow to fill the card */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* push button to the bottom *inside* the card */
+  .services-content-four .btn {
+    margin-top: auto;            /* auto top margin = stick to bottom */
+    align-self: flex-start;      /* keep left alignment */
+  }
+
+  /* centre the button horizontally */
+  .services-content-four .btn {
+    margin-top: auto;      /* stay at the bottom */
+    align-self: center;    /* horizontal centring */
+  }
+}
