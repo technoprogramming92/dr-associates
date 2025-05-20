@@ -1,0 +1,20 @@
+/* keep tags inside their column and prevent overlap */
+.post-tags .list-wrap {
+  display: flex;          /* lay out tags in a row */
+  flex-wrap: wrap;        /* wrap onto new lines */
+  gap: 6px 10px;          /* vertical    / horizontal spacing */
+  padding: 0;
+  margin: 0;              /* remove default list margin if any */
+}
+
+.post-tags .list-wrap li {
+  list-style: none;       /* in case bullets show up */
+}
+
+.post-tags .list-wrap a {
+  display: inline-block;  /* keeps each tag compact */
+  padding: 4px 10px;
+  background: #f4f4f6;    /* optional pill styling */
+  border-radius: 4px;
+  font-size: 14px;
+}
