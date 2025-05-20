@@ -9,7 +9,7 @@
 }
 
 .inner-contact-form .form-title {
-    color: #0049DC;
+    color: #685d9F;
     font-size: 28px;
     margin-bottom: 10px;
     text-align: center;
@@ -62,7 +62,7 @@
 }
 
 .contact-form .submit-btn {
-    background-color: #0049DC;
+    background-color: #685d9F;
     color: white;
     border: none;
     padding: 15px 35px;
@@ -74,7 +74,7 @@
 }
 
 .contact-form .submit-btn:hover {
-    background-color: #003db8;
+    background-color: #72527F;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 73, 220, 0.2);
 }
