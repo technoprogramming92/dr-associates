@@ -10,6 +10,10 @@ import ServiceArea from '../components/services/inner/ServiceArea.astro';
 ---
 
 <Layout>
+    <slot name="styles">
+     <title>For NGOs | DR Associates</title>
+    <link rel="stylesheet" href="/assets/css/form.css" />
+    </slot>
 	<ServiceBreadCrum title="Services For NGOs" />
     <ServiceArea/>
 </Layout>

@@ -6,6 +6,10 @@ import ServiceArea2 from '../components/services/inner/ServiceArea2.astro';
 ---
 
 <Layout>
+    <slot name="styles">
+     <title>For Investors | DR Associates</title>
+    <link rel="stylesheet" href="/assets/css/form.css" />
+    </slot>
 	<ServiceBreadCrum title="Services For Investors" />
     <ServiceArea2/>
 </Layout>

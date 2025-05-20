@@ -5,6 +5,10 @@ import InnerBlog from "../components/blogs/inner/InnerBlog.astro";
 ---
 
 <Layout>
+    <slot name="styles">
+     <title>Blog | DR Associates</title>
+    <link rel="stylesheet" href="/assets/css/form.css" />
+    </slot>
     <BlogBreadCrum title="blog 1"/>
     <InnerBlog/>
 </Layout>

@@ -6,6 +6,10 @@ import BlogSection from "../components/blogs/BlogSection.astro";
 ---
 
 <Layout>
+    <slot name="styles">
+     <title>Blogs | DR Associates</title>
+    <link rel="stylesheet" href="/assets/css/form.css" />
+    </slot>
 <BlogBreadCrum/>
 <BlogSection/>
 </Layout>

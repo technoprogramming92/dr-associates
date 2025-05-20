@@ -11,6 +11,10 @@ import About2 from "../components/about/About2.astro";
 ---
 
 <Layout>
+  <slot name="styles">
+     <title>About Us | DR Associates</title>
+    <link rel="stylesheet" href="/assets/css/form.css" />
+    </slot>
   <AboutCompany />
   <Services />
   <Overview />

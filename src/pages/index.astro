@@ -16,6 +16,10 @@ import TrustedPartners from '../components/TrustedPartners.astro';
 ---
 
 <Layout>
+    <slot name="styles">
+     <title>Home | DR Associates</title>
+    <link rel="stylesheet" href="/assets/css/form.css" />
+    </slot>
 	<Hero/>
     <Introduction/>
     <Counter/>
