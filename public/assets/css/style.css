@@ -353,13 +353,19 @@ label {
 .btn-three::after {
 	content: "";
 	background-image: url(../img/icons/right-arrow.svg);
-	filter: brightness(0) invert(1);
+	/* filter: brightness(0) invert(1); */
+	filter: brightness(0) saturate(100%)          /* force the icon to pure white */
+          invert(34%) sepia(35%)                /* set the base hue */
+          saturate(580%) hue-rotate(285deg)     /* fine-tune hue & vividness */
+          brightness(85%) contrast(95%);        
 	width: 18px;
 	height: 12px;
 	margin-left: 12px;
 }
 .btn-three:hover {
+	
 	background: var(--tg-secondary-color);
+	
 }
 .transparent-btn-two {
 	border: 2px solid var(--tg-primary-color);
@@ -415,7 +421,7 @@ label {
 	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
 }
 .scroll-top:hover {
-	background: var(--tg-secondary-color);
+	background: #685d9f;
 }
 
 
