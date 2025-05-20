@@ -4692,7 +4692,7 @@ label {
     margin-right: 5px;
 }
 .services-sidebar-contact a:hover {
-    background: var(--tg-secondary-color);
+    background: #685d9F;
 }
 .services-cat-list-two .list-wrap li a {
     position: relative;
