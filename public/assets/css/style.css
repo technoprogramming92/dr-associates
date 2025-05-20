@@ -51,7 +51,7 @@
 :root {
     --tg-body-font-family: 'Plus Jakarta Sans', sans-serif;
     --tg-heading-font-family: 'Urbanist', sans-serif;
-    --tg-primary-color: #0055FF;
+    --tg-primary-color: #72527F;
     --tg-secondary-color: #00194C;
     --tg-body-font-color: #334770;
     --tg-heading-font-color: #00194C;
@@ -3820,6 +3820,23 @@ label {
 	visibility: visible;
 	margin-top: 0;
 }
+/* chatgpt generated */
+/* make service images fill the wider card */
+.services-thumb img {
+    width: 100%;     /* span entire card width */
+    height: auto;    /* preserve aspect ratio */
+    display: block;  /* removes bottom whitespace */
+}
+
+/* optional – keep a consistent crop if you set a fixed height */
+.services-thumb {
+    overflow: hidden;      /* hide overflow when cropping */
+}
+.services-thumb img {
+    height: 240px;         /* pick a height you like */
+    object-fit: cover;     /* nicely crops without distortion */
+}
+
 .services-content .list-wrap li {
 	text-transform: capitalize;
 	color: var(--tg-paragraph-color);
