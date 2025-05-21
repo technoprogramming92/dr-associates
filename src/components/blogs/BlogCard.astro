@@ -1,0 +1,58 @@
+---
+/**
+ * BlogCard.astro
+ * Props:
+ * • title        – blog post title (string, required)
+ * • description  – short excerpt (string, required)
+ * • date         – display date (string, required, e.g. "22 Jan, 2025")
+ * • imageUrl     – thumbnail URL (string, required)
+ * • href         – link to full post (string, optional → defaults to "#")
+ * • tag          – category / tag label (string, optional)
+ * • authorName   – display name (string, optional)
+ * • authorAvatar – avatar URL (string, optional)
+ */
+const {
+  title,
+  description,
+  date,
+  imageUrl = "/assets/img/blog/h3_blog_img01.jpg",
+  href        = "#",
+  tag         = "",
+  authorName  = "John Doe",
+  authorAvatar = "/assets/img/blog/blog_avatar01.png",
+} = Astro.props;
+---
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="blog-post-item-two">
+
+    <!-- thumbnail + tag -->
+    <div class="blog-post-thumb-two">
+      <a href={href}><img src={imageUrl} alt={title} /></a>
+      {tag && <a href="#" class="tag tag-two">{tag}</a>}
+    </div>
+
+    <!-- content -->
+    <div class="blog-post-content-two">
+      <h2 class="title">
+        <a href={href}>{title}</a>
+      </h2>
+
+      <p>{description}</p>
+
+      <div class="blog-meta">
+        <ul class="list-wrap">
+          {authorName && (
+            <li>
+              <a href={href}>
+                {authorAvatar && <img src={authorAvatar} alt={authorName} />}
+                {authorName}
+              </a>
+            </li>
+          )}
+          <li><i class="far fa-calendar"></i>{date}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
