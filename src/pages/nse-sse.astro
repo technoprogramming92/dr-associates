@@ -1,0 +1,21 @@
+---
+
+import Layout from "../layouts/Layout.astro";
+import Introduction from "../components/nsesse/Introduction.astro";
+import WhyItmatters from "../components/nsesse/WhyItmatters.astro";
+import Benefits from "../components/nsesse/Benefits.astro";
+import Help from "../components/nsesse/Help.astro";
+import KeyProcesses from "../components/nsesse/KeyProcesses.astro";
+---
+
+<Layout>
+    <slot name="styles">
+     <title>What is NSE/SSE? | DR Associates</title>
+    </slot>
+<Introduction/>
+<WhyItmatters/>
+<KeyProcesses/>
+<Help/>
+
+<Benefits/>
+</Layout>
