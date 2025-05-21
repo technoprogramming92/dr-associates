@@ -32,18 +32,35 @@ import Footer from "../components/Footer.astro";
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <slot name="styles" />
+    <style>
+/* === Preloader overlay =================================== */
+#preloader{
+  position: fixed;
+  inset: 0;                       /* top+right+bottom+left:0 shorthand */
+  background: var(--tg-white);    /* or transparent if your GIF has bg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* optional: size control for the GIF */
+#preloader img{
+  width: 200px;   /* or any size */
+  height: 200px;
+}
+
+    </style>
   </head>
   <body>
     <!-- Loader and Scroller -->
     <!-- preloader -->
-    <div id="preloader">
-      <div id="loading-center">
-        <div class="loader">
-          <div class="loader-outter"></div>
-          <div class="loader-inner"></div>
-        </div>
-      </div>
-    </div>
+ <!-- preloader -->
+<div id="preloader">
+  <img src="/assets/img/loader/dr-loader.gif" alt="Loading…" />
+</div>
+<!-- preloader-end -->
+
     <!-- preloader-end -->
 
     <!-- Scroll-top -->
