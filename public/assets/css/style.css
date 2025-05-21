@@ -207,7 +207,7 @@ p {
 	font-size: var(--tg-body-font-size);
 	font-weight: var(--tg-body-font-weight);
 	line-height: var(--tg-body-line-height);
-	color: var(--tg-paragraph-color);
+	color: #72527F;
 	text-transform: var(--tg-text-transform);
 	margin-bottom: 15px;
 }
@@ -797,7 +797,7 @@ label {
 	font-size: 16px;
 	display: block;
 	line-height: 1;
-	color: var(--tg-secondary-color);
+	color: #685d9f;
 }
 .header-contact-two .content a:hover {
 	color: var(--tg-primary-color);
@@ -8429,10 +8429,10 @@ label {
 }
 .footer-social.footer-social-two .list-wrap li a {
 	background: #F1F1F1;
-	color: var(--tg-paragraph-color);
+	color: #72527F;
 }
 .footer-social.footer-social-two .list-wrap li a:hover {
-	background: var(--tg-paragraph-color);
+	background:#72527F;
 	color: var(--tg-white);
 }
 .footer-bottom-two {
