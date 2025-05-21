@@ -364,7 +364,7 @@ label {
 }
 .btn-three:hover {
 	
-	background: var(--tg-secondary-color);
+	background: #72527F;
 	
 }
 .transparent-btn-two {
@@ -10398,7 +10398,7 @@ label {
 .services-area-ten {
     padding: 120px 0 90px;
     position: relative;
-    background: var(--tg-secondary-color);
+    background:#72527F;
     z-index: 1;
 }
 .services-item-seven {
@@ -10485,7 +10485,7 @@ label {
     bottom: 9%;
 }
 .services-area-twelve {
-    background: var(--tg-secondary-color);
+    background: #685d9F;
     padding: 120px 0 90px;
     position: relative;
     z-index: 1;
