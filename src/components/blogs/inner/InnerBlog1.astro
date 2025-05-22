@@ -1,35 +1,13 @@
 ---
 import Author from "./Author.astro" 
+import "../../../../public/assets/css/blog-bottom-tag.css";
 ---
-<style>
-    /* keep tags inside their column and prevent overlap */
-.post-tags .list-wrap {
-  display: flex;          /* lay out tags in a row */
-  flex-wrap: wrap;        /* wrap onto new lines */
-  gap: 6px 10px;          /* vertical    / horizontal spacing */
-  padding: 0;
-  margin: 0;              /* remove default list margin if any */
-}
-
-.post-tags .list-wrap li {
-  list-style: none;       /* in case bullets show up */
-}
-
-.post-tags .list-wrap a {
-  display: inline-block;  /* keeps each tag compact */
-  padding: 4px 10px;
-  background: #f4f4f6;    /* optional pill styling */
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-</style>
 <!-- blog-details-area -->
 <section class="blog-details-area pt-120 pb-120">
   <div class="container">
     <div class="blog-details-wrap">
       <div class="row justify-content-center">
-        <div class="col-71">
+        <div class="">
           <div class="blog-details-thumb">
             <img src="assets/img/blog/blog-details01.jpg" alt="" />
           </div>
@@ -145,7 +123,7 @@ import Author from "./Author.astro"
           <Author/>
           
         </div>
-        <div class="col-29">
+        <!-- <div class="col-29">
           <aside class="blog-sidebar">
             <div class="sidebar-search">
               <form action="#">
@@ -248,7 +226,7 @@ import Author from "./Author.astro"
               </div>
             </div>
           </aside>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

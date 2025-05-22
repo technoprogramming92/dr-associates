@@ -18,3 +18,8 @@
   border-radius: 4px;
   font-size: 14px;
 }
+
+.blog-details-thumb img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
