@@ -13,9 +13,11 @@ interface NavItem {
 
 const nav: NavItem[] = [
   { href: "/",          label: "Home",       match: p => p === "/"                     },
-  { href: "/services",  label: "Services",   match: p => p.startsWith("/services")     },
-  { href: "/about",     label: "About Us",   match: p => p.startsWith("/about")        },
-  { href: "/sse",    label: "What is SSE?",    match: p => p.startsWith("/nse-sse") },
+   { href: "/about",     label: "About Us",   match: p => p.startsWith("/about")        },
+   { href: "/sse",    label: "What is SSE?",    match: p => p.startsWith("/sse") },
+  { href: "/services",  label: "Our Services",   match: p => p.startsWith("/services")     },
+ 
+  
   { href: "/blogs",     label: "Articles",   match: p => p === "/blogs"
                                            || /^\/blog-\d+$/i.test(p)                 },
   { href: "/contact-us",label: "Contact Us", match: p => p.startsWith("/contact-us")   },
@@ -72,7 +74,7 @@ const nav: NavItem[] = [
           <div class="menu-wrap">
             <nav class="menu-nav">
               <div class="logo">
-                <a href="#"
+                <a href="/"
                   ><img src="/assets/img/logo/dr_logo.png" alt="Logo" /></a
                 >
               </div>
