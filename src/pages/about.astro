@@ -2,8 +2,11 @@
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import AboutCompany from "../components/about/AboutCompany.astro";
+import OurVision from "../components/about/Our-vision.astro";
 import Services from "../components/about/Services.astro";
 import Overview from "../components/about/Overview.astro";
+import Counter from "../components/about/Counter.astro";
+import Experties from "../components/about/Experties.astro";
 import FAQ from "../components/about/FAQ.astro";
 import About2 from "../components/about/About2.astro";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -17,8 +20,12 @@ import About2 from "../components/about/About2.astro";
      <link rel="stylesheet" href="/assets/css/card.css" />
     </slot>
   <AboutCompany />
+  <OurVision/>
+<Counter/>
+<Experties/>
+  
+  <!-- <Overview /> -->
+  <!-- <FAQ /> -->
+  <About2 />
   <Services />
-  <Overview />
-  <!-- <FAQ />
-  <About2 /> -->
 </Layout>
