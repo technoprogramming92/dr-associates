@@ -1767,7 +1767,7 @@
 	padding: 100px 0;
 }
 .footer-top-two {
-	padding: 80px 0 30px;
+	padding: 50px 0 30px;
 }
 .request-content-two p {
 	width: 100%;
@@ -2287,7 +2287,8 @@
     padding: 25px 25px 30px;
 }
 .blog-area {
-    padding: 100px 0;
+    padding-top:60px;
+    padding-bottom: 0px;
 }
 .blog-sidebar {
     margin-top: 100px;
