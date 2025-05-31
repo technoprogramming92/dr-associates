@@ -2244,7 +2244,7 @@
 .services-details-thumb-two img {
     width: 100%;
     min-height: 250px;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .sd-inner-wrap-five .row .col-50 {
     width: 100%;
@@ -2298,7 +2298,7 @@
 .blog-details-thumb img {
     width: 100%;
     min-height: 250px;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .blog-details-content > .title {
     font-size: 26px;
