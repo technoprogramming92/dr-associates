@@ -799,8 +799,10 @@
     padding: 25px 20px 30px;
 }
 .blog-post-thumb-two img {
-    min-height: 200px;
-    object-fit: cover;
+   width: 100%; /* Ensure image takes full container width */
+    height: 200px; /* Retain your original height for consistency */
+    object-fit: none; /* Prevent scaling, allow cropping */
+    object-position: top right; /* Align image to the right, cropping from the left */
 }
 .blog-details-wrap .row .col-29 {
     width: 32%;
