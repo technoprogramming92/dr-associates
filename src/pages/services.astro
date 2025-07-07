@@ -11,11 +11,11 @@ import ServicesSEO from "../components/seo/ServicesSEO.astro";
 ---
 
 <Layout>
-    <slot name="styles">
+    <Fragment slot="styles">
      <title>Services | DR Associates</title>
      <ServicesSEO />
     <link rel="stylesheet" href="/assets/css/form.css" />
-    </slot>
+    </Fragment>
 <ServiceBreadCrum/>
 <!-- <ServiceInfo/> -->
 <ServiceList/>

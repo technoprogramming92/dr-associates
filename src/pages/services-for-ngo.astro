@@ -10,11 +10,11 @@ import NGOSeo from '../components/seo/NgoSeo.astro';
 ---
 
 <Layout>
-    <slot name="styles">
+    <Fragment slot="styles">
      <title>For NGOs | DR Associates</title>
      <NGOSeo />
     <link rel="stylesheet" href="/assets/css/form.css" />
-    </slot>
+    </Fragment>
 	<ServiceBreadCrum title="Services For NGOs" />
     <ForNGOs />
 </Layout>

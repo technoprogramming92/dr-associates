@@ -17,12 +17,12 @@ import HomeSeo from "../components/seo/HomeSeo.astro";
 ---
 
 <Layout>
-  <slot name="styles">
+  <Fragment slot="styles">
     <title>Home | DR Associates</title>
     <HomeSeo />
     <link rel="stylesheet" href="/assets/css/form.css" />
     
-  </slot>
+  </Fragment>
   <Hero />
   <Introduction />
   <Counter />

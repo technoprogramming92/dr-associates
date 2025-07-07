@@ -7,11 +7,11 @@ import InvestorSeo from '../components/seo/InvestorSeo.astro';
 ---
 
 <Layout>
-    <slot name="styles">
+    <Fragment slot="styles">
      <title>For Investors | DR Associates</title>
      <InvestorSeo />
     <link rel="stylesheet" href="/assets/css/form.css" />
-    </slot>
+    </Fragment>
 	<ServiceBreadCrum title="Services For Investors" />
     <ForInvestors />
 </Layout>

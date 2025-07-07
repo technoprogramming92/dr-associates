@@ -7,11 +7,11 @@ import ArticlesSeo from "../components/seo/ArticlesSeo.astro";
 ---
 
 <Layout>
-    <slot name="styles">
+    <Fragment slot="styles">
      <title>Blogs | DR Associates</title>
      <ArticlesSeo />
     <link rel="stylesheet" href="/assets/css/form.css" />
-    </slot>
+    </Fragment>
 <BlogBreadCrum/>
 <BlogSection/>
 </Layout>

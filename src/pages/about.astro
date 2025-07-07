@@ -16,12 +16,12 @@ import AboutSeo from "../components/seo/AboutSeo.astro";
 ---
 
 <Layout>
-  <slot name="styles">
+  <Fragment slot="styles">
      <title>About Us | DR Associates</title>
      <AboutSeo />
     <link rel="stylesheet" href="/assets/css/form.css" />
      <link rel="stylesheet" href="/assets/css/card.css" />
-    </slot>
+    </Fragment>
   <AboutCompany />
   <OurVision/>
 <Counter/>

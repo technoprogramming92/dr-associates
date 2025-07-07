@@ -10,11 +10,11 @@ import ContactSeo from "../components/seo/ContactSeo.astro";
 ---
 
 <Layout>
-  <slot name="styles">
+  <Fragment slot="styles">
      <title>Contact Us | DR Associates</title>
      <ContactSeo />
     <link rel="stylesheet" href="/assets/css/form.css" />
-    </slot>
+    </Fragment>
   <ContactBreadcrumb />
   <CompanyDetails />
   <Map />
