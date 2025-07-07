@@ -3,11 +3,13 @@
 import Layout from "../layouts/Layout.astro";
 import BlogBreadCrum from "../components/blogs/BlogBreadcrum.astro";
 import BlogSection from "../components/blogs/BlogSection.astro";
+import ArticlesSeo from "../components/seo/ArticlesSeo.astro";
 ---
 
 <Layout>
     <slot name="styles">
      <title>Blogs | DR Associates</title>
+     <ArticlesSeo />
     <link rel="stylesheet" href="/assets/css/form.css" />
     </slot>
 <BlogBreadCrum/>

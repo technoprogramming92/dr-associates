@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import BlogBreadCrum from "../components/blogs/inner/BlogBreadCrum.astro";
 import InnerBlog from "../components/blogs/inner/InnerBlog3.astro";
+import Blog3Seo from "../components/seo/Blog3Seo.astro";
 ---
 
 <Layout>
     <slot name="styles">
      <title>Blog | DR Associates</title>
+     <Blog3Seo />
     <!-- <link rel="stylesheet" href="/assets/css/blog-bottom-tags.css" /> -->
     </slot>
     <BlogBreadCrum title="DR Associates: Impact Investors - This is Your Moment"/>

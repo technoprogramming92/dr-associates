@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import BlogBreadCrum from "../components/blogs/inner/BlogBreadCrum.astro";
 import InnerBlog from "../components/blogs/inner/InnerBlog2.astro";
+import Blog2Seo from "../components/seo/Blog2Seo.astro";
 ---
 
 <Layout>
     <slot name="styles">
      <title>Blog | DR Associates</title>
+     <Blog2Seo />
     <!-- <link rel="stylesheet" href="/assets/css/blog-bottom-tags.css" /> -->
     </slot>
     <BlogBreadCrum title="The Problem NGOs Face — and How SSE Solves It"/>
