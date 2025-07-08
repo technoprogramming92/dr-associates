@@ -1,5 +1,4 @@
 ---
-
 import Layout from "../layouts/Layout.astro";
 import ServiceBreadCrum from "../components/services/ServiceBreadCrum.astro";
 import ServiceList from "../components/services/ServiceList.astro";
@@ -11,13 +10,12 @@ import ServicesSEO from "../components/seo/ServicesSEO.astro";
 ---
 
 <Layout>
-    <Fragment slot="styles">
-     <title>Services | DR Associates</title>
-     <ServicesSEO />
+  <Fragment slot="styles">
+    <ServicesSEO />
     <link rel="stylesheet" href="/assets/css/form.css" />
-    </Fragment>
-<ServiceBreadCrum/>
-<!-- <ServiceInfo/> -->
-<ServiceList/>
-<ServiceCTA/>
+  </Fragment>
+  <ServiceBreadCrum />
+  <!-- <ServiceInfo/> -->
+  <ServiceList />
+  <ServiceCTA />
 </Layout>

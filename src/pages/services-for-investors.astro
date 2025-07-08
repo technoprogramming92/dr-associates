@@ -1,17 +1,15 @@
 ---
-
-import Layout from '../layouts/Layout.astro';
-import ServiceBreadCrum from '../components/services/inner/ServiceBreadCrum.astro';
-import ForInvestors from '../components/services/inner/ForInvestors.astro';
-import InvestorSeo from '../components/seo/InvestorSeo.astro';
+import Layout from "../layouts/Layout.astro";
+import ServiceBreadCrum from "../components/services/inner/ServiceBreadCrum.astro";
+import ForInvestors from "../components/services/inner/ForInvestors.astro";
+import InvestorSeo from "../components/seo/InvestorSeo.astro";
 ---
 
 <Layout>
-    <Fragment slot="styles">
-     <title>For Investors | DR Associates</title>
-     <InvestorSeo />
+  <Fragment slot="styles">
+    <InvestorSeo />
     <link rel="stylesheet" href="/assets/css/form.css" />
-    </Fragment>
-	<ServiceBreadCrum title="Services For Investors" />
-    <ForInvestors />
+  </Fragment>
+  <ServiceBreadCrum title="Services For Investors" />
+  <ForInvestors />
 </Layout>

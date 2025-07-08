@@ -1,20 +1,18 @@
 ---
-
-import Layout from '../layouts/Layout.astro';
-import ServiceBreadCrum from '../components/services/inner/ServiceBreadCrum.astro';
-import ForNGOs from '../components/services/inner/ForNGOs.astro';
-import NGOSeo from '../components/seo/NgoSeo.astro';
+import Layout from "../layouts/Layout.astro";
+import ServiceBreadCrum from "../components/services/inner/ServiceBreadCrum.astro";
+import ForNGOs from "../components/services/inner/ForNGOs.astro";
+import NGOSeo from "../components/seo/NgoSeo.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-    <Fragment slot="styles">
-     <title>For NGOs | DR Associates</title>
-     <NGOSeo />
+  <Fragment slot="styles">
+    <NGOSeo />
     <link rel="stylesheet" href="/assets/css/form.css" />
-    </Fragment>
-	<ServiceBreadCrum title="Services For NGOs" />
-    <ForNGOs />
+  </Fragment>
+  <ServiceBreadCrum title="Services For NGOs" />
+  <ForNGOs />
 </Layout>

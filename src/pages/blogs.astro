@@ -1,5 +1,4 @@
 ---
-
 import Layout from "../layouts/Layout.astro";
 import BlogBreadCrum from "../components/blogs/BlogBreadcrum.astro";
 import BlogSection from "../components/blogs/BlogSection.astro";
@@ -7,11 +6,10 @@ import ArticlesSeo from "../components/seo/ArticlesSeo.astro";
 ---
 
 <Layout>
-    <Fragment slot="styles">
-     <title>Blogs | DR Associates</title>
-     <ArticlesSeo />
+  <Fragment slot="styles">
+    <ArticlesSeo />
     <link rel="stylesheet" href="/assets/css/form.css" />
-    </Fragment>
-<BlogBreadCrum/>
-<BlogSection/>
+  </Fragment>
+  <BlogBreadCrum />
+  <BlogSection />
 </Layout>

@@ -1,5 +1,4 @@
 ---
-
 import Layout from "../layouts/Layout.astro";
 import ContactBreadcrumb from "../components/contact/ContactBreadcrum.astro";
 import CompanyDetails from "../components/contact/CompanyDetails.astro";
@@ -11,10 +10,9 @@ import ContactSeo from "../components/seo/ContactSeo.astro";
 
 <Layout>
   <Fragment slot="styles">
-     <title>Contact Us | DR Associates</title>
-     <ContactSeo />
+    <ContactSeo />
     <link rel="stylesheet" href="/assets/css/form.css" />
-    </Fragment>
+  </Fragment>
   <ContactBreadcrumb />
   <CompanyDetails />
   <Map />
