@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://dr-associates.vercel.app/$1",
+      "permanent": true
+    }
+  ]
+}
