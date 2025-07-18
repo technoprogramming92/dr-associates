@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "https://www.drassociates.co/"
+        }
+      ],
+      "destination": "https://dr-associates-new.vercel.app/$1",
+      "permanent": true
+    }
+  ]
+}
