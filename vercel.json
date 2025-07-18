@@ -5,7 +5,7 @@
       "has": [
         {
           "type": "host",
-          "value": "https://www.drassociates.co/"
+          "value": "www.drassociates.co"
         }
       ],
       "destination": "https://dr-associates-new.vercel.app/$1",
