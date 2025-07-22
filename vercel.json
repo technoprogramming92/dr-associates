@@ -8,7 +8,7 @@
           "value": "www.drassociates.co"
         }
       ],
-      "destination": "https://dr-associates-new.vercel.app/$1",
+      "destination": "https://www.drassociates.org.in/$1",
       "permanent": true
     }
   ]
