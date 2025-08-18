@@ -2,25 +2,35 @@
 // Header.astro (inside <nav class="menu-nav"> …)
 
 // 1) Current pathname from Astro
-const path = Astro.url.pathname.replace(/\/+$/, "") || "/";   // normalise: no trailing slash
+const path = Astro.url.pathname.replace(/\/+$/, "") || "/"; // normalise: no trailing slash
 
 // 2) Map of nav items and the condition that makes them active
 interface NavItem {
   href: string;
   label: string;
-  match: (p: string) => boolean;   // <-- explicit string type
+  match: (p: string) => boolean; // <-- explicit string type
 }
 
 const nav: NavItem[] = [
-  { href: "/",          label: "Home",       match: p => p === "/"                     },
-   { href: "/about",     label: "About Us",   match: p => p.startsWith("/about")        },
-   { href: "/sse",    label: "What is SSE?",    match: p => p.startsWith("/sse") },
-  { href: "/services",  label: "Our Services",   match: p => p.startsWith("/services")     },
- 
-  
-  { href: "/blogs",     label: "Articles",   match: p => p === "/blogs"
-                                           || /^\/blog-\d+$/i.test(p)                 },
-  { href: "/contact-us",label: "Contact Us", match: p => p.startsWith("/contact-us")   },
+  { href: "/", label: "Home", match: (p) => p === "/" },
+  { href: "/about", label: "About Us", match: (p) => p.startsWith("/about") },
+  { href: "/sse", label: "What is SSE?", match: (p) => p.startsWith("/sse") },
+  {
+    href: "/services",
+    label: "Our Services",
+    match: (p) => p.startsWith("/services"),
+  },
+
+  {
+    href: "/blogs",
+    label: "Articles",
+    match: (p) => p === "/blogs" || /^\/blog-\d+$/i.test(p),
+  },
+  {
+    href: "/contact-us",
+    label: "Contact Us",
+    match: (p) => p.startsWith("/contact-us"),
+  },
 ];
 ---
 
@@ -38,7 +48,8 @@ const nav: NavItem[] = [
               </li>
               <li>
                 <i class="flaticon-mail"></i><a
-                  href="mailto:info@drassociates.co">info@drassociates.co</a
+                  href="mailto:info@drassociates.org.in"
+                  >info@drassociates.org.in</a
                 >
               </li>
             </ul>
@@ -48,12 +59,17 @@ const nav: NavItem[] = [
           <div class="header-top-right">
             <div class="header-social">
               <ul class="list-wrap">
-                <li><a href="https://www.instagram.com/dr_associates?igsh=ZWdoOGRyNTJqdXNl"><i class="fab fa-instagram"></i></a></li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/dr_associates?igsh=ZWdoOGRyNTJqdXNl"
+                    ><i class="fab fa-instagram"></i></a>
+                </li>
                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                 <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
                 <li>
                   <a href="https://www.linkedin.com/company/d-rassociates/"
-                    ><i class="fab fa-linkedin"></i></a>
+                    ><i class="fab fa-linkedin"></i></a
+                  >
                 </li>
                 <li><a href="#"><i class="fab fa-youtube"></i></a></li>
               </ul>
@@ -80,11 +96,13 @@ const nav: NavItem[] = [
               </div>
               <div class="navbar-wrap main-menu d-none d-lg-flex">
                 <ul class="navigation">
-                  {nav.map(item => (
-      <li class={item.match(path) ? "active" : ""}>
-        <a href={item.href}>{item.label}</a>
-      </li>
-    ))}
+                  {
+                    nav.map((item) => (
+                      <li class={item.match(path) ? "active" : ""}>
+                        <a href={item.href}>{item.label}</a>
+                      </li>
+                    ))
+                  }
                 </ul>
               </div>
               <div class="header-action">
@@ -133,14 +151,26 @@ const nav: NavItem[] = [
               </div>
               <div class="social-links">
                 <ul class="clearfix list-wrap">
-                  <li><a href="https://www.instagram.com/dr_associates?igsh=ZWdoOGRyNTJqdXNl" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/dr_associates?igsh=ZWdoOGRyNTJqdXNl"
+                      target="_blank"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-facebook-f"></i></a>
+                  </li>
                   <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
                   <li>
-                    <a href="https://www.linkedin.com/company/d-rassociates/"
-                       target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a
+                      href="https://www.linkedin.com/company/d-rassociates/"
+                      target="_blank"><i class="fab fa-linkedin"></i></a
+                    >
                   </li>
-                  <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-youtube"></i></a>
+                  </li>
                 </ul>
               </div>
             </nav>
@@ -202,7 +232,7 @@ const nav: NavItem[] = [
       </div>
       <div class="contact-list mb-30">
         <h4>Email Address</h4>
-        <p style="text-transform: lowercase;">info@drassociates.co</p>
+        <p style="text-transform: lowercase;">info@drassociates.org.in</p>
       </div>
     </div>
     <ul class="side-instagram list-wrap">
@@ -226,13 +256,16 @@ const nav: NavItem[] = [
       </li>
     </ul>
     <div class="social-icon-right mt-30">
-      <a href="https://www.instagram.com/dr_associates?igsh=ZWdoOGRyNTJqdXNl"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/dr_associates?igsh=ZWdoOGRyNTJqdXNl"
+        ><i class="fab fa-instagram"></i></a
+      >
       <a href="#"><i class="fab fa-facebook-f"></i></a>
       <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
-    
-        <a href="https://www.linkedin.com/company/d-rassociates/"
-          ><i class="fab fa-linkedin"></i></a>
-      
+
+      <a href="https://www.linkedin.com/company/d-rassociates/"
+        ><i class="fab fa-linkedin"></i></a
+      >
+
       <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
   </div>
