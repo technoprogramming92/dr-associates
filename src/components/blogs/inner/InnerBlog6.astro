@@ -1,0 +1,361 @@
+---
+import Author from "./Author.astro";
+import "../../../../public/assets/css/blog-bottom-tag.css";
+---
+
+<style>
+  /* keep tags inside their column and prevent overlap */
+  .post-tags .list-wrap {
+    display: flex; /* lay out tags in a row */
+    flex-wrap: wrap; /* wrap onto new lines */
+    gap: 6px 10px; /* vertical    / horizontal spacing */
+    padding: 0;
+    margin: 0; /* remove default list margin if any */
+  }
+
+  .post-tags .list-wrap li {
+    list-style: none; /* in case bullets show up */
+  }
+
+  .post-tags .list-wrap a {
+    display: inline-block; /* keeps each tag compact */
+    padding: 4px 10px;
+    background: #f4f4f6; /* optional pill styling */
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  table {
+    width: 60%;
+    margin: 0 auto;
+  }
+  th,
+  td {
+    border: 1px solid;
+    border-color: #667594;
+    border-style: outset;
+  }
+  th {
+    text-align: center;
+    background-color: #72527f;
+    color: #fff;
+    padding: 15px;
+  }
+
+  /* -------- Responsive Media Queries -------- */
+
+  /* Tablets */
+  @media (max-width: 768px) {
+    table {
+      width: 90%;
+    }
+    th,
+    td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+
+  /* Mobile phones */
+  @media (max-width: 480px) {
+    table {
+      width: 100%;
+      display: block;
+      overflow-x: auto; /* Enables horizontal scroll if needed */
+      white-space: nowrap;
+    }
+    th,
+    td {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }
+</style>
+<!-- blog-details-area -->
+<section class="blog-details-area pt-120 pb-120">
+  <div class="container">
+    <div class="blog-details-wrap">
+      <div class="row justify-content-center">
+        <div class="">
+          <div class="blog-details-thumb">
+            <img src="assets/img/blog/inner/blog-3-inner.png" alt="" />
+          </div>
+          <div class="blog-details-content">
+            <h2 class="title">
+              Why Social Enterprises May Have Trouble Showing True Social Impact
+              under the Circular
+            </h2>
+            <div class="blog-meta-three">
+              <ul class="list-wrap">
+                <li><i class="far fa-calendar"></i>14 July, 2025</li>
+                <li>
+                  <img src="assets/img/blog/Blog Writer.png" alt="" /> by <a
+                    href="#">Rohit Pandya</a
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-tags"></i>
+                  <a href="#">Social Enterprise Impact</a>
+                </li>
+                <!-- <li><i class="flaticon-speech-bubble"></i><a href="#">05 Comments</a></li> -->
+              </ul>
+            </div>
+            <p>
+              The Social Stock Exchange was designed to help social
+              organizations raise money in a transparent and trustworthy way.
+              However, several challenges in the current rules (the “circular”)
+              make it hard for social enterprises to really prove and
+              demonstrate their actual, positive impact on society. Here are the
+              reasons why:
+            </p>
+
+            <ol>
+              <li><b>Self-Reporting Without Strong Checks</b></li>
+              <ul>
+                <li>
+                  The rules require social enterprises to report on their impact
+                  through annual “Social Impact Scorecards” and other
+                  disclosures.
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  Most of these reports are created by the social enterprises
+                  themselves (self-reporting).
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <b
+                    >There is no clear rule that requires these impact claims to
+                    be checked or audited by truly independent, outside experts.</b
+                  >
+                </li>
+              </ul>
+              <p>
+                This leaves a risk that impacts could be exaggerated, selective,
+                or even false, whether on purpose or by mistake.
+              </p>
+
+              <li><b>No Standard Way to Measure Impact</b></li>
+              <ul>
+                <li>
+                  The circular tells organizations to report their impact but
+                  doesn’t set a <b
+                    >standard method for measuring or proving social impact.</b
+                  >
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  Social impact is complex and can look different for each
+                  project or cause (for example, health, education, poverty).
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  Without clear guidelines, organizations can pick the numbers
+                  or stories that make them look good, rather than show the
+                  entire, honest picture.
+                </li>
+              </ul>
+              <br />
+              <li>
+                <b>Weak Penalties and Little Oversight</b>
+              </li>
+              <ul>
+                <li>
+                  If an organization exaggerates or fakes its impact, the
+                  current rules <b
+                    >don’t clearly state strong punishments or meaningful
+                    penalties.</b
+                  >
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  This means organizations that “social-wash” (make themselves
+                  look more helpful than they are) may escape unnoticed or
+                  unpunished.
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  There is no strict regulatory body (like the NFRA)
+                  specifically verifying the social claims, making thorough
+                  oversight difficult.
+                </li>
+              </ul>
+              <br />
+              <li><b>Lack of Skilled, Independent Auditors</b></li>
+              <!-- <p>
+                The document suggests several ways to protect donors and make
+                the SSE framework stronger:
+              </p> -->
+              <ul>
+                <li>
+                  Verifying genuine social impact requires professionals who
+                  know how to audit complicated social programs and outcomes—not
+                  just finances.
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <b
+                    >India currently has a shortage of independent, skilled
+                    social auditors.</b
+                  >
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  Without these experts, even if audits become required, there
+                  may be quality and consistency problems.
+                </li>
+              </ul>
+
+              <br />
+              <li>
+                <b>Pressure to Attract Funding</b>
+                <ul>
+                  <li>
+                    To raise funds, social enterprises may feel pressure to
+                    present the best possible image of their work.
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    With loose verification, this can encourage overstatement or
+                    only reporting positive results, while ignoring failures or
+                    areas needing improvement.
+                  </li>
+                </ul>
+              </li>
+              <br />
+              <li>
+                <b>Complexity of Social Impact</b>
+                <ul>
+                  <li>
+                    Many social changes (like improving literacy or reducing
+                    poverty) take time and are hard to measure.
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    The circular expects yearly reporting, but real, meaningful
+                    change may not show up in a single year or follow a simple,
+                    measurable path.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+            <p style="text-align:center; font-size:30px">
+              <b>Summary Table</b>
+            </p>
+            <table>
+              <tr>
+                <th>Challenge</th>
+                <th>Result</th>
+              </tr>
+              <tr>
+                <td>Self-reporting with no checks</td>
+                <td>Risk of exaggeration or false claims</td>
+              </tr>
+              <tr>
+                <td>No standard measurement method</td>
+                <td>Inconsistent and unclear reporting</td>
+              </tr>
+              <tr>
+                <td>Weak penalties and oversight</td>
+                <td>Little deterrence against dishonesty</td>
+              </tr>
+              <tr>
+                <td>Few skilled social impact auditors</td>
+                <td>Hard to do reliable verification</td>
+              </tr>
+              <tr>
+                <td>Funding pressure</td>
+                <td>Temptation to exaggerate achievements</td>
+              </tr>
+              <tr>
+                <td>Complexity of social impact</td>
+                <td>Difficult to show clear results every year</td>
+              </tr>
+            </table>
+            <br /><br />
+            <p>
+              <b>In Simple Words:</b><br />
+              Under SEBI’s rules, social enterprises often end up “marking their
+              own homework” without much supervision. There aren’t enough strict
+              rules, independent checks, or penalties to ensure that the reported
+              impact is real, accurate, and meaningful. Without these, it’s easy
+              for reports to become more about appearance (“impact illusion”) than
+              reality.
+            </p>
+
+            <p>
+              <b
+                >To truly demonstrate genuine social impact, the SSE framework
+                would need independent audits, clear standards, stronger
+                penalties for misreporting, and skilled professionals to check
+                organizations’ claims. Until then, proving real, honest impact
+                under the circular will remain a big challenge for many social
+                enterprises.</b
+              ><br />
+            </p>
+
+            <div class="bd-content-bottom">
+              <div class="row align-items-center">
+                <div class="col-md-7">
+                  <div class="post-tags">
+                    <h5 class="title">Tags:</h5>
+                    <ul class="list-wrap">
+                      <li><a href="#">ImpactInvesting</a></li>
+                      <li><a href="#">SSEIndia</a></li>
+                      <li><a href="#">InvestWithPurpose</a></li>
+                      <li><a href="#">SocialFinance</a></li>
+                      <li><a href="#">ESGIndia</a></li>
+                      <li><a href="#">SocialStockExchange</a></li>
+                      <li><a href="#">DRAssociates</a></li>
+                      <li><a href="#">NGOImpact</a></li>
+                      <li><a href="#">SEBI</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="blog-post-share">
+                    <h5 class="title">Share:</h5>
+                    <ul class="list-wrap">
+                      <li>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <Author />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- blog-details-area-end -->
